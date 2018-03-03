@@ -1,6 +1,6 @@
-package substratum.theme.template
+package com.citrus.theme.extension
 
-import substratum.theme.template.BuildConfig.SUPPORTS_THIRD_PARTY_THEME_SYSTEMS
+import com.citrus.theme.extension.BuildConfig.SUPPORTS_THIRD_PARTY_THEME_SYSTEMS
 
 object Constants {
 

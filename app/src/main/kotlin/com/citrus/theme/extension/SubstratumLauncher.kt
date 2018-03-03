@@ -1,4 +1,4 @@
-package substratum.theme.template
+package com.citrus.theme.extension
 
 import android.app.Activity
 import android.content.Context
@@ -14,22 +14,22 @@ import com.github.javiersantos.piracychecker.enums.InstallerID
 import com.github.javiersantos.piracychecker.enums.PiracyCheckerCallback
 import com.github.javiersantos.piracychecker.enums.PiracyCheckerError
 import com.github.javiersantos.piracychecker.enums.PirateApp
-import substratum.theme.template.Constants.ENABLE_KNOWN_THIRD_PARTY_THEME_MANAGERS
-import substratum.theme.template.Constants.ENFORCE_MINIMUM_SUBSTRATUM_VERSION
-import substratum.theme.template.Constants.MINIMUM_SUBSTRATUM_VERSION
-import substratum.theme.template.Constants.OTHER_THEME_SYSTEMS
-import substratum.theme.template.Constants.SUBSTRATUM_FILTER_CHECK
-import substratum.theme.template.ThemeFunctions.SUBSTRATUM_PACKAGE_NAME
-import substratum.theme.template.ThemeFunctions.checkSubstratumIntegrity
-import substratum.theme.template.ThemeFunctions.getSelfSignature
-import substratum.theme.template.ThemeFunctions.getSelfVerifiedIntentResponse
-import substratum.theme.template.ThemeFunctions.getSelfVerifiedPirateTools
-import substratum.theme.template.ThemeFunctions.getSelfVerifiedThemeEngines
-import substratum.theme.template.ThemeFunctions.getSubstratumFromPlayStore
-import substratum.theme.template.ThemeFunctions.getSubstratumUpdatedResponse
-import substratum.theme.template.ThemeFunctions.hasOtherThemeSystem
-import substratum.theme.template.ThemeFunctions.isCallingPackageAllowed
-import substratum.theme.template.ThemeFunctions.isPackageInstalled
+import com.citrus.theme.extension.Constants.ENABLE_KNOWN_THIRD_PARTY_THEME_MANAGERS
+import com.citrus.theme.extension.Constants.ENFORCE_MINIMUM_SUBSTRATUM_VERSION
+import com.citrus.theme.extension.Constants.MINIMUM_SUBSTRATUM_VERSION
+import com.citrus.theme.extension.Constants.OTHER_THEME_SYSTEMS
+import com.citrus.theme.extension.Constants.SUBSTRATUM_FILTER_CHECK
+import com.citrus.theme.extension.ThemeFunctions.SUBSTRATUM_PACKAGE_NAME
+import com.citrus.theme.extension.ThemeFunctions.checkSubstratumIntegrity
+import com.citrus.theme.extension.ThemeFunctions.getSelfSignature
+import com.citrus.theme.extension.ThemeFunctions.getSelfVerifiedIntentResponse
+import com.citrus.theme.extension.ThemeFunctions.getSelfVerifiedPirateTools
+import com.citrus.theme.extension.ThemeFunctions.getSelfVerifiedThemeEngines
+import com.citrus.theme.extension.ThemeFunctions.getSubstratumFromPlayStore
+import com.citrus.theme.extension.ThemeFunctions.getSubstratumUpdatedResponse
+import com.citrus.theme.extension.ThemeFunctions.hasOtherThemeSystem
+import com.citrus.theme.extension.ThemeFunctions.isCallingPackageAllowed
+import com.citrus.theme.extension.ThemeFunctions.isPackageInstalled
 import java.io.File
 import java.util.*
 

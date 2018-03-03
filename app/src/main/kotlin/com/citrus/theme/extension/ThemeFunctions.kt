@@ -1,4 +1,4 @@
-package substratum.theme.template
+package com.citrus.theme.extension
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -9,10 +9,10 @@ import android.content.pm.Signature
 import android.net.Uri
 import android.os.RemoteException
 import android.widget.Toast
-import substratum.theme.template.Constants.BLACKLISTED_APPLICATIONS
-import substratum.theme.template.Constants.ENABLE_KNOWN_THIRD_PARTY_THEME_MANAGERS
-import substratum.theme.template.Constants.MINIMUM_SUBSTRATUM_VERSION
-import substratum.theme.template.Constants.OTHER_THEME_SYSTEMS
+import com.citrus.theme.extension.Constants.BLACKLISTED_APPLICATIONS
+import com.citrus.theme.extension.Constants.ENABLE_KNOWN_THIRD_PARTY_THEME_MANAGERS
+import com.citrus.theme.extension.Constants.MINIMUM_SUBSTRATUM_VERSION
+import com.citrus.theme.extension.Constants.OTHER_THEME_SYSTEMS
 
 
 @Suppress("ConstantConditionIf") // This needs to be defined by the themer, so suppress!
