@@ -20,6 +20,6 @@
     <string name="ThemeHeroOverride">auto</string>
     <!-- Put your theme changelog here, each item will be a new bullet point in the sheet -->
     <string-array name="ThemeChangelog">
-        <item></item>
+        <item>• Fri, 6-4-2018\- Initial release.</item>
     </string-array>
 </resources>

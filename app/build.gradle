@@ -37,10 +37,10 @@ android {
         applicationId "com.citrus.theme.extension"
         // We are only supporting Nougat and above, all new changes will incorporate Nougat changes
         // to the substratum repo rather than anything lower. Keep targetSdkVersion the same.
-        minSdkVersion 24
+        minSdkVersion 26
         targetSdkVersion 27
         // Both versions must be changed to increment on Play Store/user's devices
-        versionCode 1
+        versionCode 10
         versionName "1.0"
 
         // Themers: Do not touch this, they will only formulate integrity structure of the core
@@ -55,6 +55,13 @@ android {
             abiFilters "armeabi-v7a", "arm64-v8a", "x86"
         }
     }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "Sublime-v${variant.versionName}.apk"
+        }
+    }
+
     buildTypes {
         debug {
             minifyEnabled false
@@ -62,8 +69,25 @@ android {
         }
         release {
             // When you compile an APK as release, your resources and IV keys will be safeguarded
-            minifyEnabled true
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    signingConfigs {
+        debug {
+            // Override the local debug keystore, so that
+            // all builds have consistent certificates
+            storeFile file("../signkeys/debugKey.jks")
+            storePassword "android"
+            keyAlias "debugKey"
+            keyPassword "android"
+        }
+        release {
+            // Override the local debug keystore, so that
+            // all builds have consistent certificates
+            storeFile file("../signkeys/releaseKey.jks")
+            keyAlias "releaseKey"
         }
     }
     sourceSets {
