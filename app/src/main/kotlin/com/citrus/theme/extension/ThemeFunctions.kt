@@ -10,7 +10,6 @@ import android.net.Uri
 import android.os.RemoteException
 import android.widget.Toast
 import com.citrus.theme.extension.AdvancedConstants.BLACKLISTED_APPLICATIONS
-import com.citrus.theme.extension.AdvancedConstants.ENABLE_KNOWN_THIRD_PARTY_THEME_MANAGERS
 import com.citrus.theme.extension.AdvancedConstants.MINIMUM_SUBSTRATUM_VERSION
 import com.citrus.theme.extension.AdvancedConstants.OTHER_THEME_SYSTEMS
 
